@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Feedback</title>
+</head>
+<body>
+  <div class="feedback-container">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm">
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" required>
+
+      <label for="rollNumber">Roll Number:</label>
+      <input type="text" id="rollNumber" required>
+
+      <label for="year">Year:</label>
+      <select id="year" required>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+      </select>
+       <br>
+      <label>Residential Status:</label>
+      <input type="radio" id="hosteller" name="residentialStatus" value="Hosteller" required>
+      <label for="hosteller">Hosteller</label>
+
+      <input type="radio" id="dayScholar" name="residentialStatus" value="Day Scholar" required>
+      <label for="dayScholar">Day Scholar</label>
+
+      <label for="feedbackMessage">Feedback Message:</label>
+      <textarea id="feedbackMessage" rows="5" required></textarea>
+
+      <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
